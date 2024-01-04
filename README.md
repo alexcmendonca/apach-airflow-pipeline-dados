@@ -26,7 +26,7 @@ Este projeto consiste em aprofundar os conhecimentos sobre Apache Airflow, poder
 
 ## 🗂️Organização dos Arquivos
 - Pasta dags: A pasta de DAGs deve ser denominada como "dags" para que o Apache Airflow possa identificar adequadamente o local onde estamos criando esses fluxos de trabalho. É nesse diretório específico que os arquivos contendo o desenvolvimento de cada DAG devem ser salvos;
-- Pasta semana: É um diretório semanal criado por meio de um DAG para armazenar os dados extraídos da previsão do tempo correspondentes à semana de execução.
+- Pasta semana: Diretório semanal criado por meio de um DAG para armazenar os dados extraídos da previsão do tempo correspondentes à semana de execução.
 
 ## 🎞️Imagens do Projeto
 
