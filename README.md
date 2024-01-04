@@ -31,13 +31,13 @@ Este projeto consiste em aprofundar os conhecimentos sobre Apache Airflow, poder
 ## 🎞️Imagens do Projeto
 
 ###### Imagem 2: Inicialização Apache Airflow
-<img src="/assets/img/img-start-airflow.png">
+<img src="/assets/img/img_start_airflow.png">
 
 ###### Imagem 3: Interface Airflow
-<img src="/assets/img/img-dag.png">
+<img src="/assets/img/img_dag.png">
 
 ###### Imagem 4: Visualização gráfica de um DAG e suas dependências
-<img src="/assets/img/img-graph.png">
+<img src="/assets/img/img_graph.png">
 
 
 ## 🔍Referências
