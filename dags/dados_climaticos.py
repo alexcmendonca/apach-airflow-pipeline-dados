@@ -11,15 +11,20 @@ import pandas as pd
 # definição do DAG e criação das tarefas
 with DAG(
     'dados_climaticos',
+    # definindo data específica com biblioteca pendulum
     start_date=pendulum.datetime(2023, 12, 3, tz='UTC'),
+
+    # utilizando uma cron expression para definir período de tempo mais complexo
     schedule_interval='0 0 * * 1', #executar toda segunda feira
 ) as dag:
     
     tarefa_1 = BashOperator(
         task_id = 'cria_pasta',
+        # definindo nome da pasta com a data formatada através do strftime()
         bash_command='mkdir -p "/home/alexmend/Documents/airflow/semana={{data_interval_end.strftime("%Y-%m-%d")}}"'
     )
 
+    # utilizando variável na função com JinjaTemplates
     def extrair_dados(data_interval_end):
 
         load_dotenv()
